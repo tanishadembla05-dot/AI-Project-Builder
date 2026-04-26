@@ -1,0 +1,52 @@
+{
+  "AI/GenAI": {
+    "Beginner": ["Python", "Streamlit", "HuggingFace", "Pandas", "Jupyter"],
+    "Intermediate": ["Python", "LangChain", "FAISS", "FastAPI", "Docker"],
+    "Advanced": ["Python", "LangGraph", "Vector DB", "Kubernetes", "Redis", "Observability"]
+  },
+  "Web Dev": {
+    "Beginner": ["HTML", "CSS", "JavaScript", "Bootstrap", "Firebase"],
+    "Intermediate": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "Advanced": ["Next.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "CI/CD"]
+  },
+  "Mobile App": {
+    "Beginner": ["Flutter", "Dart", "Firebase", "SQLite"],
+    "Intermediate": ["React Native", "Node.js", "MongoDB", "Push Notifications"],
+    "Advanced": ["Swift/Kotlin", "FastAPI", "PostgreSQL", "Docker", "Crash Analytics"]
+  },
+  "Data Science": {
+    "Beginner": ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
+    "Intermediate": ["XGBoost", "Seaborn", "Plotly", "MLflow", "Streamlit"],
+    "Advanced": ["PyTorch", "Airflow", "Feature Store", "FastAPI", "Docker", "Monitoring"]
+  },
+  "Cybersecurity": {
+    "Beginner": ["Python", "Wireshark", "Regex", "OWASP Top 10"],
+    "Intermediate": ["Scapy", "ELK", "SIEM Basics", "Flask", "YARA"],
+    "Advanced": ["SOAR", "Threat Intel APIs", "Kubernetes Security", "Vault", "Cloud IAM"]
+  },
+  "IoT": {
+    "Beginner": ["Arduino", "C/C++", "Basic Sensors", "Blynk"],
+    "Intermediate": ["ESP32", "MQTT", "Node-RED", "Firebase", "Raspberry Pi"],
+    "Advanced": ["LoRaWAN", "Edge AI", "InfluxDB", "Grafana", "OTA Updates", "Digital Twin"]
+  },
+  "Blockchain": {
+    "Beginner": ["Solidity", "Remix", "MetaMask", "Web3 Basics"],
+    "Intermediate": ["Hardhat", "React", "Ethers.js", "IPFS", "Testnets"],
+    "Advanced": ["Layer 2", "Smart Contract Auditing", "The Graph", "Zero-Knowledge Basics", "DevSecOps"]
+  },
+  "Game Dev": {
+    "Beginner": ["Unity", "C#", "2D Physics", "Asset Store"],
+    "Intermediate": ["Unity 3D", "Animation", "Pathfinding", "Multiplayer Basics"],
+    "Advanced": ["Unreal Engine", "C++", "Shader Graph", "Netcode", "Profiling", "LiveOps"]
+  },
+  "AR/VR": {
+    "Beginner": ["Unity", "AR Foundation", "Basic Interaction", "Vuforia"],
+    "Intermediate": ["XR Toolkit", "ARCore/ARKit", "3D Modeling", "Optimization"],
+    "Advanced": ["OpenXR", "Spatial Anchors", "Haptics", "Cloud Rendering", "Performance Telemetry"]
+  },
+  "DevOps": {
+    "Beginner": ["Git", "Docker", "GitHub Actions", "Linux Basics"],
+    "Intermediate": ["Kubernetes", "Terraform", "Prometheus", "Grafana", "Helm"],
+    "Advanced": ["Service Mesh", "ArgoCD", "Chaos Engineering", "SRE Practices", "Policy as Code"]
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "project_idea": "AI travel website Extra features and requirements: AI Budget feature",
+  "days": 5,
+  "skill_level": "Advanced",
+  "team_size": 5,
+  "daily_hours": 5,
+  "provider": "groq",
+  "category": "Web Dev",
+  "difficulty_score": 7,
+  "confidence_percentage": 55,
+  "tools": [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Stripe",
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "CI/CD"
+  ],
+  "risks": [
+    {
+      "risk": "Authentication bypass vulnerability",
+      "severity": "High"
+    },
+    {
+      "risk": "Broken role-based access control",
+      "severity": "High"
+    },
+    {
+      "risk": "SQL/NoSQL injection vulnerability",
+      "severity": "High"
+    },
+    {
+      "risk": "Cross-site scripting exposure",
+      "severity": "High"
+    },
+    {
+      "risk": "Payment gateway integration failures",
+      "severity": "High"
+    },
+    {
+      "risk": "Caching stale critical data",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Session expiration bugs",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Unoptimized frontend causing slow loads",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Cross-browser rendering issues",
+      "severity": "Low"
+    },
+    {
+      "risk": "File upload validation bypass",
+      "severity": "High"
+    },
+    {
+      "risk": "Production misconfiguration",
+      "severity": "High"
+    },
+    {
+      "risk": "Payment failures",
+      "severity": "Medium"
+    }
+  ],
+  "milestones": [
+    "Catalog ready",
+    "Cart flow done",
+    "Payment integrated",
+    "Deployment"
+  ],
+  "deliverables": [
+    "Live site",
+    "Code repo",
+    "Testing report",
+    "PPT"
+  ],
+  "day_plan": {
+    "day_1": {
+      "phase": "Planning",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 1",
+          "what": "Map the day goals for 'AI travel website Extra features and requirements: AI Budget feature' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_1_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary planning component",
+          "what": "Build the highest-priority feature for Day 1 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 1",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_1_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core planning code path in `src/day_1_feature.py`",
+          "what": "Write or extend the main logic for 'AI travel website Extra features and requirements: AI Budget feature' in a dedicated module for Day 1.",
+          "how": "Create `src/day_1_feature.py`, add `build_day_1_feature()` using React, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI travel website Extra features and requirements: AI Budget feature scenario.",
+          "time": "1h 15 mins"
+        },
+        {
+          "summary": "Test critical flow with CLI/API checks for Day 1",
+          "what": "Verify the key feature path with positive and negative test cases.",
+          "how": "Run `python -m pytest` (or equivalent) and capture response/trace details for failed and passing cases.",
+          "output": "Test evidence file with pass/fail status and corrected issues.",
+          "time": "50 mins"
+        }
+      ],
+      "duration_estimate": "5 hours",
+      "key_output": "Planning deliverable checkpoint 1"
+    },
+    "day_2": {
+      "phase": "Development",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 2",
+          "what": "Map the day goals for 'AI travel website Extra features and requirements: AI Budget feature' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_2_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary development component",
+          "what": "Build the highest-priority feature for Day 2 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 2",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_2_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core development code path in `src/day_2_feature.py`",
+          "what": "Write or extend the main logic for 'AI travel website Extra features and requirements: AI Budget feature' in a dedicated module for Day 2.",
+          "how": "Create `src/day_2_feature.py`, add `build_day_2_feature()` using React, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI travel website Extra features and requirements: AI Budget feature scenario.",
+          "time": "1h 15 mins"
+        },
+        {
+          "summary": "Test critical flow with CLI/API checks for Day 2",
+          "what": "Verify the key feature path with positive and negative test cases.",
+          "how": "Run `python -m pytest` (or equivalent) and capture response/trace details for failed and passing cases.",
+          "output": "Test evidence file with pass/fail status and corrected issues.",
+          "time": "50 mins"
+        }
+      ],
+      "duration_estimate": "5 hours",
+      "key_output": "Development deliverable checkpoint 2"
+    },
+    "day_3": {
+      "phase": "Development",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 3",
+          "what": "Map the day goals for 'AI travel website Extra features and requirements: AI Budget feature' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_3_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary development component (variation 2)",
+          "what": "Build the highest-priority feature for Day 3 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 3",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_3_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core development code path in `src/day_3_feature.py`",
+          "what": "Write or extend the main logic for 'AI travel website Extra features and requirements: AI Budget feature' in a dedicated module for Day 3.",
+          "how": "Create `src/day_3_feature.py`, add `build_day_3_feature()` using React, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI travel website Extra features and requirements: AI Budget feature scenario.",
+          "time": "1h 15 mins"
+        },
+        {
+          "summary": "Test critical flow with CLI/API checks for Day 3",
+          "what": "Verify the key feature path with positive and negative test cases.",
+          "how": "Run `python -m pytest` (or equivalent) and capture response/trace details for failed and passing cases.",
+          "output": "Test evidence file with pass/fail status and corrected issues.",
+          "time": "50 mins"
+        }
+      ],
+      "duration_estimate": "5 hours",
+      "key_output": "Development deliverable checkpoint 3"
+    },
+    "day_4": {
+      "phase": "Testing",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 4",
+          "what": "Map the day goals for 'AI travel website Extra features and requirements: AI Budget feature' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_4_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary testing component",
+          "what": "Build the highest-priority feature for Day 4 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 4",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_4_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core testing code path in `src/day_4_feature.py`",
+          "what": "Write or extend the main logic for 'AI travel website Extra features and requirements: AI Budget feature' in a dedicated module for Day 4.",
+          "how": "Create `src/day_4_feature.py`, add `build_day_4_feature()` using React, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI travel website Extra features and requirements: AI Budget feature scenario.",
+          "time": "1h 15 mins"
+        },
+        {
+          "summary": "Test critical flow with CLI/API checks for Day 4",
+          "what": "Verify the key feature path with positive and negative test cases.",
+          "how": "Run `python -m pytest` (or equivalent) and capture response/trace details for failed and passing cases.",
+          "output": "Test evidence file with pass/fail status and corrected issues.",
+          "time": "50 mins"
+        }
+      ],
+      "duration_estimate": "5 hours",
+      "key_output": "Testing deliverable checkpoint 4"
+    },
+    "day_5": {
+      "phase": "Polish & Demo",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 5",
+          "what": "Map the day goals for 'AI travel website Extra features and requirements: AI Budget feature' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_5_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary polish & demo component",
+          "what": "Build the highest-priority feature for Day 5 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 5",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_5_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core polish & demo code path in `src/day_5_feature.py`",
+          "what": "Write or extend the main logic for 'AI travel website Extra features and requirements: AI Budget feature' in a dedicated module for Day 5.",
+          "how": "Create `src/day_5_feature.py`, add `build_day_5_feature()` using React, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI travel website Extra features and requirements: AI Budget feature scenario.",
+          "time": "1h 15 mins"
+        },
+        {
+          "summary": "Test critical flow with CLI/API checks for Day 5",
+          "what": "Verify the key feature path with positive and negative test cases.",
+          "how": "Run `python -m pytest` (or equivalent) and capture response/trace details for failed and passing cases.",
+          "output": "Test evidence file with pass/fail status and corrected issues.",
+          "time": "50 mins"
+        }
+      ],
+      "duration_estimate": "5 hours",
+      "key_output": "Polish & Demo deliverable checkpoint 5"
+    }
+  },
+  "mvp_features": [
+    "Product listing",
+    "Cart",
+    "Checkout"
+  ],
+  "optional_features": [
+    "Wishlist",
+    "Coupons",
+    "Order tracking"
+  ],
+  "viva_summary": "Focus on explaining architecture decisions, trade-offs, and risk handling for AI travel website Extra features and requirements: AI Budget feature.",
+  "report_summary": "This roadmap outlines a Web Dev project plan for 'AI travel website Extra features and requirements: AI Budget feature' with an estimated difficulty of 7/10 and completion confidence of 55%. The plan is structured for steady delivery, incremental validation, and final demo readiness.",
+  "viva_questions": [
+    {
+      "question": "How is payment secured?",
+      "short_answer": "Prepare a concise 3-4 line technical explanation with one example."
+    },
+    {
+      "question": "Why this database choice?",
+      "short_answer": "Prepare a concise 3-4 line technical explanation with one example."
+    }
+  ],
+  "matched_template": {
+    "id": 6,
+    "name": "E-Commerce Website",
+    "category": "Web Dev",
+    "difficulty": 7,
+    "min_days": 10,
+    "max_days": 45,
+    "tech_stack": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe"
+    ],
+    "beginner_stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase"
+    ],
+    "advanced_stack": [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "risks": [
+      "Payment failures",
+      "Cart bugs",
+      "Security issues"
+    ],
+    "milestones": [
+      "Catalog ready",
+      "Cart flow done",
+      "Payment integrated",
+      "Deployment"
+    ],
+    "mvp_features": [
+      "Product listing",
+      "Cart",
+      "Checkout"
+    ],
+    "optional_features": [
+      "Wishlist",
+      "Coupons",
+      "Order tracking"
+    ],
+    "deliverables": [
+      "Live site",
+      "Code repo",
+      "Testing report",
+      "PPT"
+    ],
+    "viva_questions": [
+      "How is payment secured?",
+      "Why this database choice?"
+    ],
+    "similar_projects": [
+      "Bookstore",
+      "Fashion Shop"
+    ]
+  },
+  "errors": []
+}
