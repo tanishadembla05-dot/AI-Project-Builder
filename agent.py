@@ -443,17 +443,36 @@ def risk_assessor(state: AgentState) -> AgentState:
         llm_risks: List[Dict[str, str]] = []
         if client.is_configured():
             prompt = f"""
-Return JSON array of up to 5 project-specific risks:
-[{{"risk":"...","severity":"High|Medium|Low"}}]
-Project: {state.get("project_idea", "")}
-Extra requested features: {state.get("extra_features", "None")}
-Category: {category}
-Timeline: {state.get("days", 7)} days
+Generate risks specifically for: {state.get("project_idea", "")}
+Tech stack being used: {state.get("tools", [])}
+Project category: {category}
+Extra features requested: {state.get("extra_features", "None")}
+
+Generate exactly:
+- 3 High severity risks
+- 4 Medium severity risks  
+- 2 Low severity risks
+
+Each risk must:
+- Be specific to THIS project and its tech stack
+- Name actual components that could fail
+- Not be copy-pasted generic AI risks unless truly relevant
+
+Return JSON:
+{{
+  "high": ["risk1", "risk2", "risk3"],
+  "medium": ["risk1", "risk2", "risk3", "risk4"],
+  "low": ["risk1", "risk2"]
+}}
 """
             out = client.call_llm(prompt=prompt, system_prompt="Return JSON only.")
-            parsed = safe_json_loads(out, [])
-            if isinstance(parsed, list):
-                llm_risks = [r for r in parsed if isinstance(r, dict) and "risk" in r]
+            parsed = safe_json_loads(out, {})
+            if isinstance(parsed, dict):
+                # Convert to the expected format
+                for severity, risks_list in parsed.items():
+                    if isinstance(risks_list, list):
+                        for risk in risks_list:
+                            llm_risks.append({"risk": str(risk), "severity": severity.capitalize()})
 
         merged = unique_preserve(category_risks + base_risks + llm_risks)[:12]
         state["risks"] = merged
@@ -471,7 +490,34 @@ def output_formatter(state: AgentState) -> AgentState:
         tools = unique_preserve(template.get("tech_stack", []) + skill_tools)
 
         state["tools"] = tools
-        state["milestones"] = template.get("milestones", ["Requirement freeze", "MVP complete", "Demo ready"])
+        
+        # Generate project-specific milestones
+        client = LLMClient(state.get("provider"))
+        if client.is_configured():
+            milestone_prompt = f"""
+Generate 4-5 milestones specifically for: {state.get("project_idea", "")}
+Timeline: {state.get("days", 5)} days
+Extra features: {state.get("extra_features", "None")}
+Tech stack: {tools}
+
+Each milestone must name an actual feature of THIS project.
+
+BAD: "Basic chat working" for a travel app
+GOOD: "Flight search and display working"
+GOOD: "Budget calculator giving accurate estimates"
+GOOD: "Hotel recommendations loading from API"
+
+Return as JSON list of strings.
+"""
+            milestone_out = client.call_llm(prompt=milestone_prompt, system_prompt="Return JSON array only.")
+            milestone_parsed = safe_json_loads(milestone_out, [])
+            if isinstance(milestone_parsed, list) and milestone_parsed:
+                state["milestones"] = [str(m) for m in milestone_parsed[:5]]
+            else:
+                state["milestones"] = template.get("milestones", ["Requirement freeze", "MVP complete", "Demo ready"])
+        else:
+            state["milestones"] = template.get("milestones", ["Requirement freeze", "MVP complete", "Demo ready"])
+        
         state["deliverables"] = template.get("deliverables", ["Working demo", "GitHub repo", "README", "PPT"])
         viva_questions = template.get("viva_questions", [])
         state["viva_summary"] = (

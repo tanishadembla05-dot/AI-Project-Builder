@@ -1,0 +1,271 @@
+{
+  "project_idea": "AI chatbot for student",
+  "extra_features": "Voice input",
+  "days": 3,
+  "skill_level": "Beginner",
+  "team_size": 4,
+  "daily_hours": 4,
+  "provider": "groq",
+  "category": "AI/GenAI",
+  "difficulty_score": 6,
+  "confidence_percentage": 68,
+  "tools": [
+    "Python",
+    "LangChain",
+    "Streamlit",
+    "OpenAI API",
+    "HuggingFace",
+    "Pandas",
+    "Jupyter"
+  ],
+  "risks": [
+    {
+      "risk": "API rate limiting during peak use",
+      "severity": "High"
+    },
+    {
+      "risk": "Prompt injection attacks",
+      "severity": "High"
+    },
+    {
+      "risk": "Hallucinated responses",
+      "severity": "High"
+    },
+    {
+      "risk": "Model output inconsistency",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Embedding drift over time",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Context window overflow",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Sensitive data leakage in prompts",
+      "severity": "High"
+    },
+    {
+      "risk": "High inference latency",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Token cost spikes",
+      "severity": "Medium"
+    },
+    {
+      "risk": "Low quality retrieval sources",
+      "severity": "High"
+    },
+    {
+      "risk": "Evaluation metrics not aligned to users",
+      "severity": "Medium"
+    },
+    {
+      "risk": "API rate limits",
+      "severity": "Medium"
+    }
+  ],
+  "milestones": [
+    "Basic chat working",
+    "Memory added",
+    "UI polished",
+    "Deployed"
+  ],
+  "deliverables": [
+    "Working demo",
+    "GitHub repo",
+    "README",
+    "PPT"
+  ],
+  "day_plan": {
+    "day_1": {
+      "phase": "Execution",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 1",
+          "what": "Map the day goals for 'AI chatbot for student' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_1_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary execution component",
+          "what": "Build the highest-priority feature for Day 1 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 1",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_1_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core execution code path in `src/day_1_feature.py`",
+          "what": "Write or extend the main logic for 'AI chatbot for student' in a dedicated module for Day 1.",
+          "how": "Create `src/day_1_feature.py`, add `build_day_1_feature()` using Python, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI chatbot for student scenario.",
+          "time": "1h 15 mins"
+        }
+      ],
+      "duration_estimate": "4 hours",
+      "key_output": "Execution deliverable checkpoint 1"
+    },
+    "day_2": {
+      "phase": "Execution",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 2",
+          "what": "Map the day goals for 'AI chatbot for student' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_2_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary execution component (variation 2)",
+          "what": "Build the highest-priority feature for Day 2 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 2",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_2_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core execution code path in `src/day_2_feature.py`",
+          "what": "Write or extend the main logic for 'AI chatbot for student' in a dedicated module for Day 2.",
+          "how": "Create `src/day_2_feature.py`, add `build_day_2_feature()` using Python, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI chatbot for student scenario.",
+          "time": "1h 15 mins"
+        }
+      ],
+      "duration_estimate": "4 hours",
+      "key_output": "Execution deliverable checkpoint 2"
+    },
+    "day_3": {
+      "phase": "Execution",
+      "tasks": [
+        {
+          "summary": "Define scope and acceptance checks for Day 3",
+          "what": "Map the day goals for 'AI chatbot for student' into 4-5 concrete acceptance checks.",
+          "how": "Create notes/day_3_scope.md and list measurable checks aligned with the current phase.",
+          "output": "A clear day scope document with acceptance checklist ready for execution.",
+          "time": "30 mins"
+        },
+        {
+          "summary": "Implement the primary execution component (variation 3)",
+          "what": "Build the highest-priority feature for Day 3 tied to the project milestone.",
+          "how": "Code the component using the selected stack, run a targeted smoke test, and capture logs/screenshots.",
+          "output": "Working feature implementation with test evidence and reproducible run steps.",
+          "time": "90 mins"
+        },
+        {
+          "summary": "Document progress and blockers for Day 3",
+          "what": "Summarize completed work, pending items, and blockers found during execution.",
+          "how": "Update notes/day_3_report.md with bullets, error traces, and next-day handoff notes.",
+          "output": "A review-ready daily report that can be used in demo/viva discussion.",
+          "time": "25 mins"
+        },
+        {
+          "summary": "Implement core execution code path in `src/day_3_feature.py`",
+          "what": "Write or extend the main logic for 'AI chatbot for student' in a dedicated module for Day 3.",
+          "how": "Create `src/day_3_feature.py`, add `build_day_3_feature()` using Python, and run local test command.",
+          "output": "Module compiles and produces expected output for one realistic AI chatbot for student scenario.",
+          "time": "1h 15 mins"
+        }
+      ],
+      "duration_estimate": "4 hours",
+      "key_output": "Execution deliverable checkpoint 3"
+    }
+  },
+  "mvp_features": [
+    "Text input/output",
+    "Basic memory"
+  ],
+  "optional_features": [
+    "Voice input",
+    "Multi-language",
+    "File upload"
+  ],
+  "viva_summary": "Focus on explaining architecture decisions, trade-offs, and risk handling for AI chatbot for student.",
+  "report_summary": "This roadmap outlines a AI/GenAI project plan for 'AI chatbot for student' with an estimated difficulty of 6/10 and completion confidence of 68%. The plan is structured for steady delivery, incremental validation, and final demo readiness.",
+  "viva_questions": [
+    {
+      "question": "What is RAG?",
+      "short_answer": "Prepare a concise 3-4 line technical explanation with one example."
+    },
+    {
+      "question": "How does memory work in chatbots?",
+      "short_answer": "Prepare a concise 3-4 line technical explanation with one example."
+    }
+  ],
+  "matched_template": {
+    "id": 1,
+    "name": "AI Chatbot",
+    "category": "AI/GenAI",
+    "difficulty": 6,
+    "min_days": 5,
+    "max_days": 30,
+    "tech_stack": [
+      "Python",
+      "LangChain",
+      "Streamlit",
+      "OpenAI API"
+    ],
+    "beginner_stack": [
+      "Python",
+      "Streamlit",
+      "HuggingFace"
+    ],
+    "advanced_stack": [
+      "FastAPI",
+      "LangGraph",
+      "Docker",
+      "Redis"
+    ],
+    "risks": [
+      "API rate limits",
+      "Prompt injection",
+      "Latency issues"
+    ],
+    "milestones": [
+      "Basic chat working",
+      "Memory added",
+      "UI polished",
+      "Deployed"
+    ],
+    "mvp_features": [
+      "Text input/output",
+      "Basic memory"
+    ],
+    "optional_features": [
+      "Voice input",
+      "Multi-language",
+      "File upload"
+    ],
+    "deliverables": [
+      "Working demo",
+      "GitHub repo",
+      "README",
+      "PPT"
+    ],
+    "viva_questions": [
+      "What is RAG?",
+      "How does memory work in chatbots?"
+    ],
+    "similar_projects": [
+      "Document QA Bot",
+      "Voice Assistant"
+    ]
+  },
+  "errors": []
+}
