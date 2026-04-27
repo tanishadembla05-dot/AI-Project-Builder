@@ -789,6 +789,14 @@ def main():
             index=None,
             placeholder="Select skill level",
         )
+        tech_stack_options = ["Unity Engine", "Unreal Engine", "Other"]
+        selected_tech = st.selectbox("Tech Stack", tech_stack_options, index=None, placeholder="Select tech stack")
+        tech_stack = ""
+        if selected_tech == "Other":
+            custom_tech = st.text_input("Custom Tech Stack", placeholder="e.g. Python, React, Node.js")
+            tech_stack = custom_tech.strip()
+        elif selected_tech:
+            tech_stack = selected_tech
         team_size_input = st.text_input("Team Size", value="", placeholder="e.g. 3")
         daily_hours_input = st.text_input("Daily Hours", value="", placeholder="e.g. 8")
         if st.button("Generate Plan", use_container_width=True):
@@ -797,6 +805,9 @@ def main():
                 st.stop()
             if not skill_level:
                 st.warning("Please select a skill level.")
+                st.stop()
+            if not tech_stack:
+                st.warning("Please select or enter a tech stack.")
                 st.stop()
             try:
                 days = max(1, min(90, int(days_input.strip())))
@@ -813,6 +824,7 @@ def main():
                     skill_level=skill_level,
                     team_size=team_size,
                     daily_hours=daily_hours,
+                    tech_stack=tech_stack,
                     provider=provider,
                 )
                 st.session_state["project_idea"] = project_idea.strip()
@@ -1099,8 +1111,8 @@ def render_compare_projects():
             return
         
         with st.spinner("Analyzing projects..."):
-            plan1 = run_agent(proj1_idea, proj1_extra, proj1_days, proj1_skill, proj1_team, 8, "groq")
-            plan2 = run_agent(proj2_idea, proj2_extra, proj2_days, proj2_skill, proj2_team, 8, "groq")
+            plan1 = run_agent(proj1_idea, proj1_extra, proj1_days, proj1_skill, proj1_team, 8, "", "groq")
+            plan2 = run_agent(proj2_idea, proj2_extra, proj2_days, proj2_skill, proj2_team, 8, "", "groq")
             
             # Create comparison table
             data = {

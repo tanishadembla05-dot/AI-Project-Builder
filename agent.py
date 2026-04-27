@@ -155,6 +155,7 @@ class AgentState(TypedDict, total=False):
     skill_level: str
     team_size: int
     daily_hours: int
+    tech_stack: str
     provider: str
     category: str
     difficulty_score: int
@@ -489,6 +490,11 @@ def output_formatter(state: AgentState) -> AgentState:
         skill_tools = tech_stacks.get(category, {}).get(state.get("skill_level", "Beginner"), [])
         tools = unique_preserve(template.get("tech_stack", []) + skill_tools)
 
+        # If user provided tech_stack, use it instead
+        user_tech_stack = state.get("tech_stack", "").strip()
+        if user_tech_stack:
+            tools = [t.strip() for t in user_tech_stack.split(",") if t.strip()]
+
         state["tools"] = tools
         
         # Generate project-specific milestones
@@ -563,6 +569,7 @@ def run_agent(
     skill_level: str,
     team_size: int,
     daily_hours: int,
+    tech_stack: str = "",
     provider: str = "groq",
 ) -> AgentState:
     app = build_graph()
@@ -573,6 +580,7 @@ def run_agent(
         "skill_level": skill_level,
         "team_size": team_size,
         "daily_hours": daily_hours,
+        "tech_stack": tech_stack,
         "provider": provider,
     }
     result = app.invoke(initial_state)
